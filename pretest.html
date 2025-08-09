@@ -1,11 +1,96 @@
-<!-- Save as pretest.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pre-Test</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f7fa;
+        color: #333;
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        background: #3f51b5;
+        color: white;
+        padding: 1.5rem 2rem;
+        text-align: center;
+        box-shadow: 0 3px 6px rgba(63,81,181,0.3);
+      }
+      nav {
+        background: #283593;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem 0;
+        box-shadow: inset 0 -2px 4px rgba(0,0,0,0.2);
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.3rem 0.6rem;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+      }
+      nav a:hover,
+      nav a:focus {
+        background: #5c6bc0;
+      }
+      main {
+        max-width: 800px;
+        background: white;
+        margin: 2rem auto 4rem;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        text-align: center;
+      }
+      main p {
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+      }
+      iframe {
+        width: 100%;
+        height: 800px;
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(63,81,181,0.2);
+        border: none;
+      }
+      footer {
+        text-align: center;
+        padding: 1rem 2rem;
+        background: #3f51b5;
+        color: white;
+        font-weight: 500;
+        margin-top: auto;
+        box-shadow: 0 -3px 6px rgba(63,81,181,0.3);
+      }
+      @media (max-width: 600px) {
+        nav {
+          gap: 1rem;
+        }
+        main {
+          margin: 1rem 1rem 3rem;
+          padding: 1.2rem;
+        }
+        main p {
+          font-size: 1rem;
+        }
+        iframe {
+          height: 600px;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -23,9 +108,7 @@
       <p>Please complete the pre-test below before starting the tutorials.</p>
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSckjqQTOKR2Qcp2NdDjCJHxEKIZsH2RcrHOgOVJb-nNbQZYaQ/viewform?usp=header"
-        width="100%"
-        height="800"
-        frameborder="0"
+        loading="lazy"
         >Loading…</iframe
       >
     </main>
